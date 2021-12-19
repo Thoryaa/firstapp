@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    background-color: var(--Verydarkblue);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Verydarkblue: hsl(217, 54%, 11%);
+    --Verydarkblu: hsl(216, 50%, 16%);
+    --Verydarkbl: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.cardcontainer {
+    background: var(--Verydarkblu);
+    width: 347px;
+    padding: 20px 4px 30px 5px;
+    border-radius: 14px 14px 45px 45px;
+}
+
+.card {
+    background: var(--Verydarkbl);
+    width: 367px;
+    padding: 22px;
+    border-radius: 14px;
+}
+
+.img {
+    background-image: url(image-equilibrium.jpg);
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.up h2 {
+    color: var(--White);
+    margin: 32px 0px 8px 0px;
+}
+
+.up p {
+    color: var(--Softblue);
+    font-weight: 400;
+}
+
+.up .con {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left span {
+    margin-left: 6px;
+    color: var(--Softblue);
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.right span {
+    margin-left: 6px;
+    color: var(--Cyan);
+}
+
+.down {
+    display: flex;
+}
+
+.avatar img {
+    margin-right: 9px;
+    height: 31px;
+    border: double white;
+    border-radius: 50%;
+}
+
+.des {
+    color: var(--Softblue);
+    margin-right: 9px;
+}
+
+.name {
+    color: var(--White);
+    text-transform: capitalize;
+}
+
+@media (min-width:375px) {
+    .card {
+        width: 326px;
+    }
+}
